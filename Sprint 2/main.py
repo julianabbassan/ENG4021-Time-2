@@ -1,8 +1,10 @@
 def calcula_soma(a,b):
-    return
+    soma = a+b
+    return soma
 
 def calcula_subtracao(a,b):
-    return
+    sub = a-b
+    return sub
 
 def calcula_multiplicacao(a,b):
     return

@@ -2,8 +2,7 @@ def calcula_soma(a,b):
     return
 
 def calcula_subtracao(a,b):
-    subtracao=a-b
-    return subtracao
+    return
 
 def calcula_multiplicacao(a,b):
     return

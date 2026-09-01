@@ -1,6 +1,5 @@
 def calcula_soma(a,b):
-    soma = a+b
-    return soma
+    return
 
 def calcula_subtracao(a,b):
     subtracao=a-b

@@ -19,12 +19,15 @@ def calcula_radiciacao(a,b):
     return
 
 def calcula_divisao_inteira(a,b):
+    divInteira = a//b
     return  
 
 def calcula_resto(a,b):
+    resto = a % b 
     return
 
 def calcula_percentual(a,b):
+    ( a / 100 ) * b
     return
 
 print("Bem vindo à calculadora do Time 2!")

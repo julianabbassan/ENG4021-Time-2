@@ -7,10 +7,10 @@ def calcula_subtracao(a,b):
     return sub
 
 def calcula_multiplicacao(a,b):
-    return a * b
+    return a*b
 
 def calcula_divisao(a,b):
-    return a / b
+    return a/b
 
 def calcula_potenciacao(a,b):
     pot = a**b

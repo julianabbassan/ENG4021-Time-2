@@ -13,10 +13,12 @@ def calcula_divisao(a,b):
     return  
 
 def calcula_potenciacao(a,b):
-    return
+    pot = a**b
+    return pot
 
 def calcula_radiciacao(a,b):
-    return
+    rad = a**(1/b)
+    return rad
 
 def calcula_divisao_inteira(a,b):
     divInteira = a//b

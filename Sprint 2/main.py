@@ -13,19 +13,24 @@ def calcula_divisao(a,b):
     return a/b
 
 def calcula_potenciacao(a,b):
-    return
+    pot = a**b
+    return pot
 
 def calcula_radiciacao(a,b):
-    return
+    rad = a**(1/b)
+    return rad
 
 def calcula_divisao_inteira(a,b):
-    return  
+    divInteira = a//b
+    return divInteira 
 
 def calcula_resto(a,b):
-    return
+    resto = a % b 
+    return resto 
 
 def calcula_percentual(a,b):
-    return
+    percent = ( a / 100 ) * b
+    return percent
 
 print("Bem vindo à calculadora do Time 2!")
 operacao = int(input("Digite o número da operação desejada:\n1 - Adição\n2 - Subtração\n3 - Multiplicação\n4 - Divisão\n5 - Potenciação\n6 - Radiciação\n7 - Divisão inteira\n8 - Resto da divisão\n9 - Percentual\n0 - Sair\n"))

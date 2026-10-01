@@ -1,5 +1,10 @@
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #E5E0D8 !important;
+    margin: 0;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 26px;
 }
 
 
@@ -10,11 +15,24 @@ body{
 
 .botoes-centralizados{
     display: flex;
+    height: 40%;
+    gap: 36px;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+}
+
+.btn-laranja{
+    background-color: #D9643A !important;
+    color: #E5E0D8 !important;
+    border-radius: 25px;
+    width: 25%;
 }
 
 .rodape-fixo{
     position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
+    text-align: center;
 }

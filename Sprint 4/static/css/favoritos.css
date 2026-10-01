@@ -1,5 +1,17 @@
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #E5E0D8 !important;
+    margin: 0;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 26px;
+}
+
+.cabecalho-superior{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .superior-direito{
@@ -7,7 +19,35 @@ body{
     justify-content: end;
 }
 
+.btn-laranja{
+    background-color: #D9643A !important;
+    color: #E5E0D8 !important;
+    border-radius: 25px;
+}
+
+.logo-arredondada{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.card-restaurante{
+    display: flex;
+    gap: 12px;
+}
+
+
 .rodape-fixo{
     position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
+    text-align: center;
 }

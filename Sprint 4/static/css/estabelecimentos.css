@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf7f2;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+}
+
+h1 {
+    color: chocolate;
+}
+
+.restaurante {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #b84e29;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.rodape {
+    margin-top: 40px;
+    font-weight: bold;
+    color: chocolate;
+}

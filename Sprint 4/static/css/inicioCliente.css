@@ -8,6 +8,13 @@ body{
 }
 
 
+.cabecalho-superior{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .superior-direito{
     display: flex;
     justify-content: end;
@@ -29,6 +36,12 @@ body{
     height: 15%;
     width: 25%;
     font-size: medium;
+}
+
+.btn-laranja-voltar{
+    background-color: #D9643A !important;
+    color: #E5E0D8 !important;
+    border-radius: 25px;
 }
 
 .rodape-fixo{

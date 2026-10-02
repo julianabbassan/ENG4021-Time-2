@@ -1,0 +1,11 @@
+/* Barra inferior das telas do cliente: Explorar / Favoritos / Ler QR Code */
+body{ padding-bottom: 110px; }
+.nav-cliente{
+    position: fixed; bottom: 0; left: 0; width: 100%;
+    display: flex; justify-content: space-around;
+    padding: 14px 0; background: #fff; border-top: 1px solid #e5ddd0;
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; z-index: 10;
+}
+.nav-cliente a{ color: #444; text-decoration: none; }
+.nav-cliente a.ativo{ color: chocolate; font-weight: bold; }
+.rodape-fixo{ bottom: 52px; }

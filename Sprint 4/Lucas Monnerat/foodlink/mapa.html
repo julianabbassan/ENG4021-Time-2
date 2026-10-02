@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodLink · Mapa de telas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body{font-family:'Plus Jakarta Sans',sans-serif;background:antiquewhite;max-width:760px;margin:0 auto;padding:24px}
+        h1{margin:0 0 4px} h2{margin-top:32px;color:chocolate}
+        p.sub{color:gray;margin-top:0}
+        table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;font-size:14px}
+        th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #eee;vertical-align:top}
+        th{background:chocolate;color:#fff}
+        a{color:chocolate;font-weight:600}
+        .falta{color:#999}
+        .iniciar{display:inline-block;background:chocolate;color:#fff;border-radius:25px;padding:12px 28px;text-decoration:none;margin:12px 8px 0 0}
+        .iniciar.sec{background:#fff;color:chocolate;border:2px solid chocolate}
+    </style>
+</head>
+<body>
+    <h1>Food<span style="color:chocolate">Link</span></h1>
+    <p class="sub">Mapa de telas do protótipo — clique para abrir cada uma.</p>
+    <a class="iniciar" href="boasVindas.html">Começar como cliente</a>
+    <a class="iniciar sec" href="cadastro.html">Começar como restaurante</a>
+
+    <h2>Fluxo do cliente</h2>
+    <table>
+        <tr><th>Tela do vídeo</th><th>Código</th><th>Autor(a)</th></tr>
+        <tr><td>Olá, cliente! (entrada)</td><td><a href="boasVindas.html">boasVindas.html</a></td><td>João Paulo</td></tr>
+        <tr><td>Olá, cliente! (com Voltar)</td><td><a href="inicioCliente.html">inicioCliente.html</a></td><td>Juliana</td></tr>
+        <tr><td>Onde vamos comer? (busca/mapa)</td><td><a href="busca.html">busca.html</a></td><td>Diego</td></tr>
+        <tr><td>Aponte a câmera para o QR Code</td><td><a href="qrcode.html">qrcode.html</a></td><td>Diego</td></tr>
+        <tr><td>Seus favoritos</td><td><a href="favoritos.html">favoritos.html</a></td><td>Juliana</td></tr>
+        <tr><td>Cardápio público / Detalhe do produto</td><td class="falta">ainda sem código</td><td>—</td></tr>
+    </table>
+
+    <h2>Fluxo do restaurante</h2>
+    <table>
+        <tr><th>Tela do vídeo / fluxograma</th><th>Código</th><th>Autor(a)</th></tr>
+        <tr><td>Login / cadastro do dono</td><td><a href="cadastro.html">cadastro.html</a></td><td>João Paulo</td></tr>
+        <tr><td>Seu cardápio (dashboard)</td><td><a href="tela1.html">tela1.html</a></td><td>Sofia</td></tr>
+        <tr><td>Editar produto</td><td><a href="tela2.html">tela2.html</a></td><td>Sofia</td></tr>
+        <tr><td>Adicionar produto</td><td><a href="adicionarProduto.html">adicionarProduto.html</a></td><td>Rafael</td></tr>
+        <tr><td>Categorias (nova / renomear)</td><td><a href="novaCategoria.html">novaCategoria.html</a></td><td>Rafael</td></tr>
+        <tr><td>Aparência · Meu restaurante · Pré-visualização · QR Code do cardápio</td><td class="falta">ainda sem código</td><td>—</td></tr>
+    </table>
+</body>
+</html>

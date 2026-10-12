@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Busca</title>
+    <link href="melhorado_busca.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="topo">
+        <button class="botao-voltar" type="button" aria-label="Voltar" onclick="location.href='inicioCliente.html'">&larr;</button>
+        <img class="logo" src="../Juliana Bassan/novalogo.jpg" alt="FoodLink" width="100">
+    </header>
+
+    <main>
+        <p class="eyebrow">DESCUBRA NOVOS SABORES</p>
+        <h1>Onde vamos comer?</h1>
+
+        <form class="busca" role="search">
+            <input type="search" placeholder="Busque por nome ou tipo de cozinha" aria-label="Buscar restaurante">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div class="filtros" aria-label="Filtros">
+            <button type="button" class="filtro ativo">Todos</button>
+            <button type="button" class="filtro">Italiana</button>
+            <button type="button" class="filtro">Saudável</button>
+            <button type="button" class="filtro">Brasileira</button>
+        </div>
+
+        <div class="mapa">
+            <iframe title="Mapa de restaurantes próximos" loading="lazy"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-43.2400%2C-22.9850%2C-43.2260%2C-22.9730&amp;layer=mapnik"></iframe>
+        </div>
+
+        <div class="acoes-mapa">
+            <a class="botao-secundario" href="#resultados">Três lugares próximos</a>
+            <a class="botao-secundario" href="https://www.openstreetmap.org/#map=16/-22.9790/-43.2330" target="_blank" rel="noopener">Tela cheia</a>
+        </div>
+
+        <h2 id="resultados">Perto de você</h2>
+
+        <ul class="resultados">
+            <li class="resultado">
+                <a class="dados" href="#">
+                    <span class="foto" aria-hidden="true">C</span>
+                    <span class="info">
+                        <strong class="nome">Casa di Pasta</strong>
+                        <span class="categoria">Italiana</span>
+                    </span>
+                </a>
+                <label class="favoritar" title="Favoritar">
+                    <input type="checkbox" aria-label="Favoritar Casa di Pasta">
+                    <span class="coracao">&#9829;</span>
+                </label>
+            </li>
+            <li class="resultado">
+                <a class="dados" href="#">
+                    <span class="foto" aria-hidden="true">C</span>
+                    <span class="info">
+                        <strong class="nome">Couve-flor</strong>
+                        <span class="categoria">Brasileira</span>
+                    </span>
+                </a>
+                <label class="favoritar" title="Favoritar">
+                    <input type="checkbox" aria-label="Favoritar Couve-flor" checked>
+                    <span class="coracao">&#9829;</span>
+                </label>
+            </li>
+            <li class="resultado">
+                <a class="dados" href="#">
+                    <span class="foto" aria-hidden="true">L</span>
+                    <span class="info">
+                        <strong class="nome">Le max</strong>
+                        <span class="categoria">Fast Food</span>
+                    </span>
+                </a>
+                <label class="favoritar" title="Favoritar">
+                    <input type="checkbox" aria-label="Favoritar Le max" checked>
+                    <span class="coracao">&#9829;</span>
+                </label>
+            </li>
+        </ul>
+    </main>
+
+    <p class="rodape">Food<span>Link</span></p>
+
+    <nav class="nav-cliente">
+        <a href="melhorado_busca.html" class="ativo">Explorar</a>
+        <a href="melhorado_favoritos.html">Favoritos</a>
+        <a href="qrcode.html">Ler QR Code</a>
+    </nav>
+</body>
+</html>

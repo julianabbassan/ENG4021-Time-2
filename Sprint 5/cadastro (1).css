@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fbf7f0;
+    color: #1a1a1a;
+    margin: 0 auto;
+    max-width: 430px;
+}
+
+.icone {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* a tela ocupa a altura toda, assim o botão fica no canto de baixo */
+.tela {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2px 12px 3px 15px;
+}
+
+/* ---------- topo ---------- */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-voltar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-left: -2px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.logo {
+    display: block;
+    width: 41px;
+    height: 41px;
+    margin: -2px -3px 0 0;
+    border-radius: 10px;
+}
+
+/* ---------- títulos ---------- */
+.eyebrow {
+    margin: 26px 0 5px;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e8501a;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26.5px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+/* ---------- formulário ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* ocupa o resto da tela */
+    margin-top: 8px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 11.5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #e7dfd3;
+    border-radius: 14px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    color: #1a1a1a;
+}
+
+input::placeholder {
+    color: #9a948b;
+}
+
+/* ---------- termos ---------- */
+.termos {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin: 6px 0 21px;
+    font-size: 11.5px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #3a3a3a;
+}
+
+.termos input {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin: 1px 0 0 3px;
+    accent-color: #e8501a; /* cor do "check" quando marcado */
+}
+
+/* ---------- botão seta ---------- */
+.botao-seta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;  /* vai para a direita */
+    margin-top: auto;      /* e para o fim da tela */
+    width: 47px;
+    height: 47px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fb8a1e, #ea580c);
+    color: white;
+    cursor: pointer;
+}

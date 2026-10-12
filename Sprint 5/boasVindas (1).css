@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fbf7f0;
+    color: #1a1a1a;
+    margin: 0 auto;
+    max-width: 430px;
+    padding-bottom: 90px; /* espaço para o menu fixo não cobrir o conteúdo */
+}
+
+/* ícones (todos os SVGs usam essa classe) */
+.icone {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+/* ---------- topo ---------- */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    padding: 0 16px 6px;
+    border-bottom: 1px solid #ebe4d9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -0.02em;
+}
+
+.logo-link {
+    color: #b84e29;
+}
+
+.link-restaurante {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 9.5px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.link-restaurante .icone {
+    width: 13px;
+    height: 13px;
+}
+
+/* ---------- conteúdo ---------- */
+.conteudo {
+    padding: 0 16px;
+}
+
+.eyebrow {
+    margin: 32px 0 12px;
+    font-size: 8.5px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #b84e29;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+}
+
+h1 span {
+    font-weight: 300;
+}
+
+.subtitulo {
+    margin: 16px 0 0;
+    font-size: 11px;
+    line-height: 1.9;
+    color: #5c5750;
+}
+
+/* ---------- botões ---------- */
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 999px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botao .icone {
+    width: 17px;
+    height: 17px;
+    stroke-width: 1.7;
+}
+
+.botao-principal {
+    height: 46px;
+    background-color: #b84e29;
+    color: white;
+    border: none;
+}
+
+.botao-secundario {
+    height: 44px;
+    background-color: transparent;
+    color: #b84e29;
+    border: 1.5px solid #b84e29;
+}
+
+/* ---------- card de destaque ---------- */
+.destaque {
+    display: block;
+    position: relative;
+    height: 226px;
+    margin-top: 26px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #8a6a4a; /* cor que aparece se a foto não carregar */
+    color: white;
+    text-decoration: none;
+}
+
+.destaque img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaque-texto {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 50px 18px 18px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+}
+
+.destaque-legenda {
+    margin: 0;
+    font-size: 8.5px;
+    opacity: 0.9;
+}
+
+.destaque-titulo {
+    margin: 9px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ---------- divisor + menu inferior ---------- */
+.divisor {
+    margin-top: 34px;
+    border-top: 1px solid #ebe4d9;
+}
+
+.menu-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 430px;
+    margin: 0 auto;
+    height: 62px;
+    padding: 0 44px 9px 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #fbf7f0;
+    border-top: 1px solid #ebe4d9;
+    font-size: 9.3px;
+    font-weight: 500;
+}
+
+.menu-inferior a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.menu-inferior .icone {
+    width: 14px;
+    height: 14px;
+}
+
+.badge {
+    padding: 2px 7px;
+    border-radius: 999px;
+    background-color: #ebe4d9;
+    font-size: 9px;
+}

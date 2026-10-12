@@ -1,0 +1,138 @@
+/* ---------- Base (mesma identidade das telas de boas-vindas e cadastro) ---------- */
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: antiquewhite;
+    color: #3b2a20;
+    margin: 0;
+    padding: 20px 24px 130px;
+    max-width: 480px;
+    margin-inline: auto;
+}
+
+/* ---------- Topo ---------- */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-voltar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    background: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logo { border-radius: 10px; }
+
+/* ---------- Títulos ---------- */
+.eyebrow {
+    color: chocolate;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 28px 0 4px;
+}
+
+h1 { margin: 0; font-size: 28px; }
+
+.subtitulo { color: gray; margin: 6px 0 24px; }
+
+/* ---------- Lista de favoritos (cartões) ---------- */
+.lista-favoritos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cartao {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: white;
+    border: 1px solid #eadfce;
+    border-radius: 18px;
+    padding: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .15s, box-shadow .15s;
+}
+
+.cartao:hover,
+.cartao:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(210, 105, 30, .18);
+}
+
+.foto {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: chocolate;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.nome { font-size: 16px; }
+
+.categoria {
+    align-self: flex-start;
+    font-size: 12px;
+    color: chocolate;
+    background: #fdf0e3;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+.coracao { color: chocolate; font-size: 24px; }
+
+/* ---------- Estado vazio ---------- */
+.vazio { display: none; text-align: center; padding: 30px 10px; }
+.lista-favoritos:not(:has(li)) + .vazio { display: block; }
+.vazio-icone { font-size: 48px; color: chocolate; margin: 0; }
+.vazio h2 { font-size: 18px; margin: 8px 0; }
+.vazio p { color: gray; }
+
+.botao-principal {
+    display: inline-block;
+    background: chocolate;
+    color: white;
+    border-radius: 25px;
+    padding: 14px 28px;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+/* ---------- Rodapé e navegação inferior ---------- */
+.rodape { text-align: center; margin-top: 40px; font-weight: 700; }
+.rodape span { color: chocolate; }
+
+.nav-cliente {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0;
+    background: white;
+    border-top: 1px solid #e5ddd0;
+    font-size: 14px;
+}
+
+.nav-cliente a { color: #444; text-decoration: none; }
+.nav-cliente a.ativo { color: chocolate; font-weight: 700; }

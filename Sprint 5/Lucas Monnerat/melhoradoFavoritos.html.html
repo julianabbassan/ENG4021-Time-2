@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seus favoritos</title>
+    <link href="melhorado_favoritos.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="topo">
+        <button class="botao-voltar" type="button" aria-label="Voltar" onclick="location.href='inicioCliente.html'">&larr;</button>
+        <img class="logo" src="../Juliana Bassan/novalogo.jpg" alt="FoodLink" width="100">
+    </header>
+
+    <main>
+        <p class="eyebrow">SUA LISTA</p>
+        <h1>Seus favoritos!</h1>
+        <p class="subtitulo">Seus lugares favoritos, sempre por perto.</p>
+
+        <ul class="lista-favoritos">
+            <li>
+                <a class="cartao" href="#">
+                    <span class="foto" aria-hidden="true">C</span>
+                    <span class="info">
+                        <strong class="nome">Couve-flor</strong>
+                        <span class="categoria">Brasileira</span>
+                    </span>
+                    <span class="coracao" aria-label="Favorito">&#9829;</span>
+                </a>
+            </li>
+            <li>
+                <a class="cartao" href="#">
+                    <span class="foto" aria-hidden="true">L</span>
+                    <span class="info">
+                        <strong class="nome">Le max</strong>
+                        <span class="categoria">Fast Food</span>
+                    </span>
+                    <span class="coracao" aria-label="Favorito">&#9829;</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Aparece sozinho quando a lista acima não tiver nenhum <li> -->
+        <div class="vazio">
+            <p class="vazio-icone">&#9825;</p>
+            <h2>Você ainda não favoritou nenhum lugar</h2>
+            <p>Toque no coração de um restaurante para guardá-lo aqui.</p>
+            <a class="botao-principal" href="busca.html">Buscar estabelecimento</a>
+        </div>
+    </main>
+
+    <p class="rodape">Food<span>Link</span></p>
+
+    <nav class="nav-cliente">
+        <a href="busca.html">Explorar</a>
+        <a href="melhorado_favoritos.html" class="ativo">Favoritos</a>
+        <a href="qrcode.html">Ler QR Code</a>
+    </nav>
+</body>
+</html>

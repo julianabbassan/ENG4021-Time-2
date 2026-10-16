@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fbf7f0;
+    color: #1a1a1a;
+    margin: 0 auto;
+    max-width: 430px;
+    padding-bottom: 80px; /* espaço para o menu fixo não cobrir o último produto */
+}
+
+.icone {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+.icone-grande {
+    width: 15px;
+    height: 15px;
+}
+
+/* ---------- topo ---------- */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    padding: 0 13px 7px;
+    border-bottom: 1px solid #ebe4d9;
+}
+
+.logo-texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    color: #a8451f;
+}
+
+.acoes-topo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 9px;
+}
+
+.acoes-topo .icone {
+    width: 16px;
+    height: 16px;
+}
+
+.ver-cardapio {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 8.5px;
+    font-weight: 500;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.botao-qr {
+    display: flex;
+    color: #1a1a1a;
+}
+
+/* ---------- conteúdo ---------- */
+.conteudo {
+    padding: 0 5px 0 13px;
+}
+
+.restaurante {
+    margin: 25px 0 0;
+    font-size: 9.6px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #a8451f;
+}
+
+h1 {
+    margin: 14px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+.descricao {
+    max-width: 245px;
+    margin: 6px 0 0;
+    font-size: 9.5px;
+    line-height: 1.7;
+    color: #5c5750;
+}
+
+.botao-adicionar {
+    display: inline-flex;
+    vertical-align: top; /* tira o espacinho que o botão deixa embaixo */
+    align-items: center;
+    gap: 10px;
+    height: 39px;
+    margin-top: 20px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #b84e29;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ---------- busca ---------- */
+.busca-linha {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 23px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 13px;
+    height: 46px;
+    padding: 0 14px 0 12px;
+    border: 1px solid #ddd5ca;
+    border-radius: 10px;
+    background-color: #fffdfa;
+    color: #6b655d;
+}
+
+.busca input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 9.4px;
+    color: #1a1a1a;
+}
+
+.busca input::placeholder {
+    color: #6b655d;
+}
+
+.contagem {
+    font-size: 7.3px;
+    color: #6b655d;
+    white-space: nowrap;
+}
+
+/* ---------- lista de produtos ---------- */
+.lista {
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    padding: 14px 0;
+    border-bottom: 1px solid #ebe4d9;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.foto {
+    flex-shrink: 0;
+    width: 43px;
+    height: 43px;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #d9cdbd; /* aparece se a foto não carregar */
+}
+
+.nome {
+    flex: 1;
+    font-size: 9.5px;
+    font-weight: 600;
+}
+
+.preco {
+    margin-right: 8px;
+    font-size: 8.1px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.acoes {
+    display: flex;
+    gap: 14px;
+    margin-right: 7px;
+}
+
+.botao-icone {
+    display: flex;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #4a453f;
+    cursor: pointer;
+}
+
+.botao-icone + .botao-icone {
+    color: #aaa39a; /* lixeira mais clara que o lápis */
+}
+
+.botao-icone .icone {
+    width: 12px;
+    height: 12px;
+}
+
+/* ---------- "disponível" (toggle) ---------- */
+.linha-disponivel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 7px 0 0 51px; /* 51px = largura da foto + espaço, alinha com o nome */
+    font-size: 6.9px;
+    color: #6b655d;
+}
+
+.toggle {
+    position: relative;
+    width: 24px;
+    height: 14px;
+    border-radius: 999px;
+    background-color: #cfc8bc;
+}
+
+.toggle.ligado {
+    background-color: #3b6b35;
+}
+
+.bolinha {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.toggle.ligado .bolinha {
+    left: 12px;
+}
+
+/* ---------- menu inferior ---------- */
+.menu-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 430px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 17px 3px 25px;
+    background-color: #fbf7f0;
+    border-top: 1px solid #ebe4d9;
+}
+
+.item-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 6.7px;
+    font-weight: 500;
+    color: #5c5750;
+    text-decoration: none;
+}
+
+.item-menu.ativo {
+    color: #b84e29;
+}
+
+.icone-menu {
+    width: 18px;
+    height: 18px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR Code</title>
+    <link href="melhorado_qrcode.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="topo">
+        <button class="botao-voltar" type="button" aria-label="Voltar" onclick="location.href='inicioCliente.html'">&larr;</button>
+        <img class="logo" src="../Juliana Bassan/novalogo.jpg" alt="FoodLink" width="100">
+    </header>
+
+    <main>
+        <p class="eyebrow">CARDÁPIO DIGITAL</p>
+        <h1>Aponte a câmera para o QR Code</h1>
+        <p class="subtitulo">Posicione o código dentro da moldura.</p>
+
+        <!-- Moldura da câmera feita só com CSS (não depende de imagem externa) -->
+        <div class="camera" role="img" aria-label="Área de leitura do QR Code">
+            <span class="canto sup-esq"></span>
+            <span class="canto sup-dir"></span>
+            <span class="canto inf-esq"></span>
+            <span class="canto inf-dir"></span>
+            <span class="linha-leitura"></span>
+            <p class="camera-texto">Leitura de demonstração</p>
+        </div>
+
+        <p class="status"><span class="ponto"></span>Câmera pronta</p>
+
+        <a class="botao-principal" href="melhorado_busca.html">Simular leitura</a>
+        <p class="ajuda">Neste protótipo, a leitura abre um cardápio de exemplo. Você não precisa liberar a câmera.</p>
+
+        <a class="link-secundario" href="melhorado_busca.html">Prefiro buscar um restaurante</a>
+    </main>
+
+    <p class="rodape">Food<span>Link</span></p>
+
+    <nav class="nav-cliente">
+        <a href="melhorado_busca.html">Explorar</a>
+        <a href="melhorado_favoritos.html">Favoritos</a>
+        <a href="melhorado_qrcode.html" class="ativo">Ler QR Code</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 430px;
+    background-color: #fbf9f5;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+}
+
+.icone {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+.icone-grande {
+    width: 15px;
+    height: 15px;
+}
+
+/* ---------- topo ---------- */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 53px;
+    padding: 0 6px 13px;
+    border-bottom: 1px solid #e6e4df;
+}
+
+.logo-texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.6px;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    color: #a8451f;
+}
+
+.acoes-topo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 11px;
+}
+
+.ver-cardapio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 8.7px;
+    font-weight: 500;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.botao-qr {
+    display: flex;
+    color: #1a1a1a;
+}
+
+.botao-qr .icone {
+    width: 16px;
+    height: 16px;
+}
+
+/* ---------- cabeçalho da página ---------- */
+.conteudo {
+    flex: 1; /* empurra o rodapé para o fim da tela */
+}
+
+.cabecalho {
+    padding: 0 6px;
+}
+
+.eyebrow {
+    margin: 27px 0 0;
+    font-size: 8.2px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ad4524;
+}
+
+h1 {
+    margin: 12px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.037em;
+}
+
+.descricao {
+    margin: 12px 0 0;
+    font-size: 9.1px;
+    color: #5c5750;
+}
+
+.botao-nova {
+    display: inline-flex;
+    vertical-align: top; /* tira o espacinho que o botão deixa embaixo */
+    align-items: center;
+    gap: 10px;
+    height: 39px;
+    margin-top: 21px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ad4524;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 10.3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ---------- lista de categorias ---------- */
+.lista {
+    margin: 22px 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #e0dfd8;
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+    height: 70.5px;
+    padding: 0 7px 0 6px;
+    border-bottom: 1px solid #e6e4dd;
+}
+
+.numero {
+    width: 20px;
+    font-size: 8px;
+    color: #a39d94;
+}
+
+.info {
+    flex: 1;
+}
+
+.nome {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.05em;
+}
+
+.quantidade {
+    margin: 6px 0 0;
+    font-size: 8px;
+    color: #6b655d;
+}
+
+.acoes {
+    display: flex;
+    gap: 29px;
+}
+
+.botao-icone {
+    display: flex;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.botao-icone + .botao-icone {
+    color: #b4ada3; /* lixeira mais clara que o lápis */
+}
+
+.botao-icone .icone {
+    width: 16px;
+    height: 16px;
+}
+
+/* ---------- rodapé ---------- */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6px 65px; /* 65px = altura do menu fixo + espacinho */
+    font-size: 6.7px;
+    color: #7a746b;
+}
+
+.rodape span:last-child {
+    margin-right: -3px;
+}
+
+.salvo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.salvo .icone {
+    width: 9px;
+    height: 9px;
+}
+
+/* ---------- menu inferior ---------- */
+.menu-inferior {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 430px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 13px 3px 19px;
+    background-color: #fbf9f5;
+    border-top: 1px solid #e6e4dd;
+}
+
+.item-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 6.7px;
+    font-weight: 500;
+    color: #5c5750;
+    text-decoration: none;
+}
+
+.item-menu.ativo {
+    color: #ad4524;
+}
+
+.icone-menu {
+    width: 18px;
+    height: 18px;
+}
